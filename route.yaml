@@ -1,0 +1,17 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: route-app
+  namespace: poc-deploy-canary
+spec:
+  alternateBackends:
+  - kind: Service
+    name: app-canary
+    weight: 10
+  host: app.apps.ocp4.local
+  port:
+    targetPort: 80
+  to:
+    kind: Service
+    name: app
+    weight: 90
