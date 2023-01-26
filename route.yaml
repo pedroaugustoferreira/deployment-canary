@@ -6,12 +6,12 @@ metadata:
 spec:
   alternateBackends:
   - kind: Service
-    name: app-canary
+    name: service-app-canary
     weight: 10
-  host: app.apps.ocp4.local
+  host: app-poc-deploy-canary.apps.oc-dev.ovd.com.br
   port:
     targetPort: 80
   to:
     kind: Service
-    name: app
+    name: service-app
     weight: 90

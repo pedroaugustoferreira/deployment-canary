@@ -38,8 +38,8 @@ spec:
       restartPolicy: Always
       schedulerName: default-scheduler
       securityContext: {}
-      serviceAccount: sa-canary
-      serviceAccountName: sa-canary
+      serviceAccount: sa-poc-deploy-canary
+      serviceAccountName: sa-poc-deploy-canary
       terminationGracePeriodSeconds: 30
       volumes:
       - name: html

@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  index.html: U2VydmljZSBJVCAtIENhbmFyeQo=
+kind: Secret
+metadata:
+  name: se-version2
+type: Opaque
+
